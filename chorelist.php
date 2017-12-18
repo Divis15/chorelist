@@ -61,8 +61,8 @@ function editChores($id) {
 		echo "<form method='post' name='userForm'>";
 		echo "<input type='hidden' name='id' value='$id'>";
 		echo "<input type='hidden' name='delete' value=''>";
-		echo "<input type='text' name='chore' value='$chore'>";
-		echo "<input type='text' name='day' value='$day'>";
+		echo "<input type='text' name='company' value='$company'>";
+		echo "<input type='text' name='price' value='$price'>";
 		echo "<input type='submit' value='Update' class='btn btn-primary btn-sm'>";
 		echo "<input type='button' value='Delete' onclick='deleteChores()' class='btn btn-primary btn-sm'>";
 		echo "</form>";
