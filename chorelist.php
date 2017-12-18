@@ -74,7 +74,7 @@ function createChores() {
 	echo "<input type='hidden' name='id' value='0'>";
 	echo "<input type='text' name='chore'>";
 	echo "<input type='text' name='day'>";
-	echo "<input type='submit' value='Add'>";
+	echo "<input type='submit' value='Add' class='btn btn-primary btn-sm'>";
 	echo "</form>";
 
 	echo "<a href='/chorelist.php' class='btn btn-primary btn-sm'>view all</a>";
@@ -85,8 +85,8 @@ function viewChores() {
 	echo "<table class='table table-hover table-bordered table-condensed'>";
 	echo "<thead>";
 	echo "<tr>";
-	echo "<td><h4><font color='royal blue'>Chore:</font></h4></td>";
-	echo "<td><h4><font color='red'>Weekday:</font></h4></td>";
+	echo "<td><h4><font color='blue'>Chore:</font></h4></td>";
+	echo "<td><h4><font color='blue'>Weekday:</font></h4></td>";
 	echo "<td><a href='/chorelist.php?id=0' class='btn btn-info btn-sm'>create</a></td>";
 	echo "</tr>";
 	echo "</thead>";
@@ -97,7 +97,7 @@ function viewChores() {
 		$day = $row['day'];
 		echo "<tr>";
 		echo "<td class='info'><ul><li>$chore</li></ul></td>";
-		echo "<td class='danger'><ul><li>$day</li></ul></td>";
+		echo "<td class=''><ul><li>$day</li></ul></td>";
 		echo "<td class='info'>";
 		echo "<a href='/chorelist.php?id=$id' class='btn btn-primary btn-sm'>edit</a>";
 		echo "</td>";

@@ -1,5 +1,10 @@
 <?php
 require_once "database.php";
+require_once "html.php";
+html_open();
+echo "<title>Company</title>";
+html_body();
+echo "<div class='jumbotron'><h1>Comany Products</h1></div>";
 if(array_key_exists("id", $_POST)){
 	$id = $_POST['id'];
 	$company =  $_POST['company name'];
@@ -53,4 +58,5 @@ function viewCompany() {
 	}
 	echo "</table>";
 }
+html_close();
 ?>

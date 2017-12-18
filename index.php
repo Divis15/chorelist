@@ -25,6 +25,7 @@
 	    <li>Labrador</li>
 	    <li>Shih Tzu</li>
 	    <li>Bulldog</li>
+	    <li>Corgi</li>
 	</ul>
 	<h2>Places Originated From</h2>
 	<ul>
